@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASA DE RAÇÃO DA LIA - Alimentação de Qualidade para Seus Pets</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for unique design */
+        .hero-bg {
+            background: linear-gradient(135deg, #ff00d4ff, #250423ff);
+            background-size: cover;
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #a15297ff;
+            text-decoration: underline;
+        }
+        .testimonials-bg {
+            background: linear-gradient(135deg, #FFFACD, #FFE4B5);
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+        .bounce {
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            40% {transform: translateY(-10px);}
+            60% {transform: translateY(-5px);}
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <!-- Header -->
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-orange-600">
+                <img src="https://placehold.co/50x50" alt="Icon representing a house with a bowl of pet food, symbolizing a cozy pet food home store with warm orange and yellow tones" class="inline-block mr-2 rounded-full" />
+                Casa de Ração da Lia
+            </h1>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#home" class="nav-link text-gray-700 hover:text-orange-600">Home</a></li>
+                <li><a href="#produtos" class="nav-link text-gray-700 hover:text-orange-600">Produtos</a></li>
+                <li><a href="#sobre" class="nav-link text-gray-700 hover:text-orange-600">Sobre Nós</a></li>
+                <li><a href="#contato" class="nav-link text-gray-700 hover:text-orange-600">Contato</a></li>
+            </ul>
+            <button id="mobile-menu-btn" class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="md:hidden bg-white border-t hidden">
+            <ul class="px-4 py-2 space-y-2">
+                <li><a href="#home" class="nav-link block text-gray-700 hover:text-orange-600">Home</a></li>
+                <li><a href="#produtos" class="nav-link block text-gray-700 hover:text-orange-600">Produtos</a></li>
+                <li><a href="#sobre" class="nav-link block text-gray-700 hover:text-orange-600">Sobre Nós</a></li>
+                <li><a href="#contato" class="nav-link block text-gray-700 hover:text-orange-600">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl md:text-6xl font-bold mb-4">Alimentação de Qualidade para Seus Amigos de Quatro Patas</h2>
+            <p class="text-xl mb-8">Descubra rações premium, acessórios e cuidados especiais para cães e gatos na Casa de Ração da Lia.</p>
+            <button class="bg-white text-orange-600 px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition">Ver Produtos</button>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="produtos" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Nossos Produtos</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="product-card bg-gray-100 p-6 rounded-lg shadow-md">
+                    <img src="https://placehold.co/400x300" alt="Vibrant display of colorful dog food bags and treats arranged on a wooden shelf in a pet store, with orange and brown hues emphasizing freshness and quality" class="w-full h-48 object-cover rounded mb-4" />
+                    <h3 class="text-xl font-bold mb-2">Ração para Cães</h3>
+                    <p class="text-gray-600 mb-4">Diversos sabores e fórmulas para manter seu cão saudável e feliz.</p>
+                    <p class="text-orange-600 font-bold">A partir de R$ 49,90</p>
+                </div>
+                <div class="product-card bg-gray-100 p-6 rounded-lg shadow-md">
+                    <img src="https://placehold.co/400x300" alt="Elegant cat food cans and dry kibble in a cozy store environment with soft blue and white decorations highlighting premium nutrition" class="w-full h-48 object-cover rounded mb-4" />
+                    <h3 class="text-xl font-bold mb-2">Ração para Gatos</h3>
+                    <p class="text-gray-600 mb-4">Opções balanceadas para gato castrado ou ativo, com proteínas de alta qualidade.</p>
+                    <p class="text-orange-600 font-bold">A partir de R$ 39,90</p>
+                </div>
+                <div class="product-card bg-gray-100 p-6 rounded-lg shadow-md">
+                    <img src="https://placehold.co/400x300" alt="Playful assortment of pet accessories including toys, beds, and collars in warm yellow tones, displayed on a rustic table for a homely feel" class="w-full h-48 object-cover rounded mb-4" />
+                    <h3 class="text-xl font-bold mb-2">Acessórios para Pets</h3>
+                    <p class="text-gray-600 mb-4">Brinquedos, camas e itens essenciais para o conforto do seu pet.</p>
+                    <p class="text-orange-600 font-bold">A partir de R$ 19,90</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="py-20 bg-gray-200">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-8 text-gray-800">Sobre Nós</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="https://placehold.co/600x400" alt="Warm interior of a pet food store with Lia smiling at the counter, surrounded by shelves of colorful pet food and happy customers with pets in a bright, inviting space" class="w-full rounded-lg shadow-lg" />
+                </div>
+                <div class="md:w-1/2 md:pl-8 text-left">
+                    <p class="text-lg mb-4">Bem-vindo à Casa de Ração da Lia! Fundada por alguém que ama animais, nossa missão é oferecer produtos de alta qualidade para cães e gatos. Lia sempre seleciona as melhores marcas para garantir a saúde e felicidade dos seus pets.</p>
+                    <p class="text-lg">Venha nos visitar e conheça nosso atendimento personalizado. Seu pet merece o melhor!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-bg py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">O que Nossos Clientes Dizem</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <p class="text-gray-600 italic">"A ração aqui é incrível! Meu cachorro nunca foi tão saudável e energético."</p>
+                    <p class="font-bold mt-4">- Maria Silva</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <p class="text-gray-600 italic">"Lia é super atenciosa e sempre me ajuda a escolher o melhor para meu gato."</p>
+                    <p class="font-bold mt-4">- João Pereira</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Entre em Contato</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="https://placehold.co/600x400" alt="Bird's eye view of a pet store location with surrounding streets and trees, showing the welcoming facade in a suburban neighborhood under sunny skies" class="w-full rounded-lg shadow-lg" />
+                </div>
+                <div class="md:w-1/2 md:pl-8">
+                    <p class="text-lg mb-4">Endereço: Rua dos Animais, 123 - Centro, Cidade</p>
+                    <p class="text-lg mb-4">Telefone: (11) 99999-9999</p>
+                    <p class="text-lg mb-4">Email: contato@casadereacaodalia.com.br</p>
+                    <div class="flex space-x-4">
+                        <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Facebook</button>
+                        <button class="bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700">Instagram</button>
+                    </div>
+                </div>
+            </div>
+            <form class="mt-12 max-w-md mx-auto" id="contact-form">
+                <div class="mb-4">
+                    <input type="text" id="name" placeholder="Seu Nome" class="w-full p-3 border rounded" required>
+                </div>
+                <div class="mb-4">
+                    <input type="email" id="email" placeholder="Seu Email" class="w-full p-3 border rounded" required>
+                </div>
+                <div class="mb-4">
+                    <textarea id="message" placeholder="Sua Mensagem" rows="4" class="w-full p-3 border rounded" required></textarea>
+                </div>
+                <button type="submit" class="bg-orange-600 text-white px-8 py-3 rounded-full font-bold hover:bg-orange-700 w-full">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>© 2023 Casa de Ração da Lia. Todos os direitos reservados.</p>
+            <p class="mt-2">Cuidando dos seus pets com dedicação.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Simple form validation (no actual submission for this demo)
+        const form = document.getElementById('contact-form');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            if (name && email && message) {
+                alert('Obrigado pelo contato! Responderemos em breve.');
+                form.reset();
+            } else {
+                alert('Por favor, preencha todos os campos.');
+            }
+        });
+
+        // Smooth scroll for nav links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add bounce animation to hero call-to-action on load
+        window.addEventListener('load', () => {
+            const ctaBtn = document.querySelector('.hero-bg button');
+            ctaBtn.classList.add('bounce');
+        });
+    </script>
+</body>
+</html>
+</content>
+</create_file>
